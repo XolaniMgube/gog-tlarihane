@@ -1,0 +1,31 @@
+#home-section{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 100px 100px 1fr;
+    grid-template-rows: 2fr 3fr 2fr;
+    grid-template-areas:
+        "back   back    white   white"
+        "back   back    white    white"
+        "back   back    white   white"
+}
+
+.background{
+    background-color: red;
+    grid-area: back;
+    /* grid-column: 1/3;
+    grid-row: 1/4; */
+}
+
+.white-space{
+    background-color: pink;
+    grid-area: white;
+    /* grid-column: 3/5;
+    grid-row: 1/4; */
+}
+
+.book-me{
+    background-color: black;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
